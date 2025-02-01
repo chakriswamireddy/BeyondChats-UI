@@ -61,12 +61,12 @@ function OrgSetup() {
                                 <label htmlFor="companyname" className="block text-xs sm:text-sm text-left">Company Name</label>
                                 <input
                                     onChange={(e) => setOrgName(e.target.value)}
-                                    required type="text" name="companyname" id="companyname" placeholder="Name" className="  w-full px-3 py-2 border rounded-md border-purple-400 dark:border-gray-300 bg-gray-900 dark:bg-gray-50 text-gray-100 dark:text-gray-800 focus:border-purple-400 focus:dark:border-purple-600" />
+                                    required type="text" name="companyname" id="companyname" placeholder="Name" className="  w-full px-3 py-2 border rounded-md border-gray-300 bg-gray-50 text-gray-800 focus:border-purple-400 focus:dark:border-purple-600" />
                             </div>
                             <div className="space-y-2">
                                 <label htmlFor="orgemail" className="block text-xs sm:text-sm text-left">Organizaton Email</label>
                                 <input required
-                                    onChange={(e) => setOrgEmail(e.target.value)} type="email" name="orgemail" id="orgemail" placeholder="@" className="w-full px-3  py-2  border rounded-md border-gray-700 dark:border-gray-300 bg-gray-900 dark:bg-gray-50 text-gray-100 dark:text-gray-800 focus:border-violet-400 focus:dark:border-violet-600" />
+                                    onChange={(e) => setOrgEmail(e.target.value)} type="email" name="orgemail" id="orgemail" placeholder="@" className="w-full px-3  py-2  border rounded-md border-gray-300 bg-gray-50 text-gray-800 focus:border-violet-600" />
                             </div>
                             <div className="space-y-2">
                                 <div className="flex justify-between">
@@ -74,7 +74,7 @@ function OrgSetup() {
                                     {/* <a rel="noopener noreferrer" href="#" className="text-xs hover:underline text-gray-400 dark:text-gray-600">Forgot password?</a> */}
                                 </div>
                                 <input required
-                                    onChange={(e) => setorgURL(e.target.value)} type="url" name="orgurl" id="orgurl" placeholder="https://" className="w-full px-3 py-2  border rounded-md border-gray-700 dark:border-gray-300 bg-gray-900 dark:bg-gray-50 text-gray-100 dark:text-gray-800 focus:border-violet-400 focus:dark:border-violet-600" />
+                                    onChange={(e) => setorgURL(e.target.value)} type="url" name="orgurl" id="orgurl" placeholder="https://" className="w-full px-3 py-2  border rounded-md border-gray-300 bg-gray-50 text-gray-800 focus:border-violet-600 " />
                             </div>
                         </div>
 
