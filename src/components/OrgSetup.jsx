@@ -61,12 +61,12 @@ function OrgSetup() {
                                 <label htmlFor="companyname" className="block text-xs sm:text-sm text-left">Company Name</label>
                                 <input
                                     onChange={(e) => setOrgName(e.target.value)}
-                                    required type="text" name="companyname" id="companyname" placeholder="Name" className="  w-full px-3 py-2 border rounded-md border-purple-400 dark:border-gray-300 bg-gray-900 dark:bg-gray-50 text-gray-100 dark:text-gray-800 focus:border-purple-400 focus:dark:border-purple-600" />
+                                    required type="text" name="companyname" id="companyname" placeholder="Name" className="  w-full px-3 py-2 border rounded-md border-gray-300 bg-gray-50 text-gray-800 focus:border-purple-400 focus:dark:border-purple-600" />
                             </div>
                             <div className="space-y-2">
                                 <label htmlFor="orgemail" className="block text-xs sm:text-sm text-left">Organizaton Email</label>
                                 <input required
-                                    onChange={(e) => setOrgEmail(e.target.value)} type="email" name="orgemail" id="orgemail" placeholder="@" className="w-full px-3  py-2  border rounded-md border-gray-700 dark:border-gray-300 bg-gray-900 dark:bg-gray-50 text-gray-100 dark:text-gray-800 focus:border-violet-400 focus:dark:border-violet-600" />
+                                    onChange={(e) => setOrgEmail(e.target.value)} type="email" name="orgemail" id="orgemail" placeholder="@" className="w-full px-3  py-2  border rounded-md border-gray-300 bg-gray-50 text-gray-800 focus:border-violet-600" />
                             </div>
                             <div className="space-y-2">
                                 <div className="flex justify-between">
@@ -74,7 +74,7 @@ function OrgSetup() {
                                     {/* <a rel="noopener noreferrer" href="#" className="text-xs hover:underline text-gray-400 dark:text-gray-600">Forgot password?</a> */}
                                 </div>
                                 <input required
-                                    onChange={(e) => setorgURL(e.target.value)} type="url" name="orgurl" id="orgurl" placeholder="https://" className="w-full px-3 py-2  border rounded-md border-gray-700 dark:border-gray-300 bg-gray-900 dark:bg-gray-50 text-gray-100 dark:text-gray-800 focus:border-violet-400 focus:dark:border-violet-600" />
+                                    onChange={(e) => setorgURL(e.target.value)} type="url" name="orgurl" id="orgurl" placeholder="https://" className="w-full px-3 py-2  border rounded-md border-gray-300 bg-gray-50 text-gray-800 focus:border-violet-600 " />
                             </div>
                         </div>
 
@@ -96,7 +96,7 @@ function OrgSetup() {
                             </div>
 
 
-                            <p className="text-right  ml-auto text-[9px] sm:text-sm font-medium text-pink-500">{formError} </p>
+                            <p className="text-right  ml-auto text-[10px]  sm:text-sm font-medium text-pink-500">{formError} </p>
 
                             <div className='relative'>
                                 {/* <button 
@@ -109,12 +109,12 @@ function OrgSetup() {
                                             setIsHoverOnBtn(false)
                                         }, 1000)
                                     }} onMouseLeave={() => setIsHoverOnBtn(false)}
-                                    type="button" className="cursor-pointer ml-auto block  w-s px-8 pr-12 py-3 font-semibold rounded-md bg-violet-400 dark:bg-violet-600 text-gray-900 dark:text-gray-50">
+                                    type="button" className="cursor-pointer ml-auto block  px-4 sm:px-8 pr-8 sm:pr-12 py-3 text-sm sm:text-base font-semibold rounded-md bg-violet-600 text-gray-50">
                                         Set Up
 
 
                                 </button>
-                                <Lottie animationData={nextLottie} className='h-10 w-10 bottom-1 right-2 absolute  ' loop={isHoverOnBtn} autoplay={isHoverOnBtn} />
+                                <Lottie animationData={nextLottie} className=' h-8 w-8 sm:h-10 sm:w-10 bottom-1 right-1 sm:right-2 absolute  ' loop={isHoverOnBtn} autoplay={isHoverOnBtn} />
                             </div>
                         </div>
                         <div className='relative'>
