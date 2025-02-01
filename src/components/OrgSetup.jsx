@@ -5,7 +5,7 @@ import TrainingCard from '../shared/TrainingCard'
 import nextLottie from '../assets/lottie/Forward.json'
 import Lottie from 'lottie-react';
 import useSliderStore from '../zustand/sliderStore';
-
+import isUrl from "is-url";
 
 
 function OrgSetup() {
@@ -135,7 +135,7 @@ function OrgSetup() {
 
                     <p className='font-medium sm:ml-2 text-purple-400'> Fetched Webpages </p>
 
-                    {orgURL.match(/^https?:\/\/[\w\-]+(\.[\w\-])+(\.[\w\-])+[/#?]?.*$/) ?
+                    {isUrl(orgURL) ?
 
                         <AnimatedList items={['store', 'support', 'brand', 'login', 'store-address', 'realmenow', 'legal/declaration-disclosures', 'bulk-order', 'legal/coins']} />
 

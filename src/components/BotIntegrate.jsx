@@ -159,7 +159,7 @@ export default function BotIntegrate() {
 
             }
 
-            <div className='flex gap-4 justify-between border   w-[90%] sm:w-max items-center '>
+            <div className='flex gap-4 justify-between    w-[90%] sm:w-max items-center '>
 
 
 
