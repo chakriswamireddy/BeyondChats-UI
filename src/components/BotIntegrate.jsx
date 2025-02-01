@@ -75,9 +75,9 @@ export default function BotIntegrate() {
                         <div>
                             <div className=" relative space-y-2 pb-2 flex flex-col sm:flex-row items-start gap-2 border- border-pink-800">
                                 {/* <label htmlFor="email" className="block text-sm text-left">Email address</label> */}
-                                <input type="email" name="email" id="email" placeholder="Client Developer Email " className=" mx-2 w-[90%] sm:w-full px-2 py-2 border rounded-md border-gray-700 dark:border-gray-300 bg-gray-900 dark:bg-gray-50 text-gray-100 dark:text-gray-800 focus:border-violet-400 focus:dark:border-violet-600" />
+                                <input type="email" name="email" id="email" placeholder="Client Developer Email " className=" mx-2 w-[90%] sm:w-full px-2 py-2 border rounded-md border-gray-300 bg-gray-50 text-gray-800 focus:border-violet-600 " />
                                 <button onClick={() => setIsSendBtnHover(!isSendBtnHover)}
-                                    type="button" className="cursor-pointer ml-auto block  mr-5 sm:mr-4  px-8 pr-16 py-2 font-semibold rounded-md bg-violet-400 dark:bg-violet-600 text-gray-900 dark:text-gray-50">
+                                    type="button" className="cursor-pointer ml-auto block  mr-5 sm:mr-4  px-8 pr-16 py-2 font-semibold rounded-md bg-violet-600 text-gray-50">
                                        {isSendBtnHover? 'Sent' : 'Send'} 
 
 
@@ -98,10 +98,10 @@ export default function BotIntegrate() {
                             <div className='flex gap-2 ml-2 pb-2'>
 
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-                                    {/* <g fill=''> */}
+
 
                                     <path fill="white" d="M10 2a4 4 0 1 0 0 8a4 4 0 0 0 0-8M7 6a3 3 0 1 1 6 0a3 3 0 0 1-6 0m-1.991 5A2 2 0 0 0 3 13c0 1.691.833 2.966 2.135 3.797c1.086.692 2.493 1.075 4.026 1.176A3 3 0 0 1 9 17v-.042c-1.318-.114-2.468-.457-3.327-1.005C4.623 15.283 4 14.31 4 13c0-.553.448-1 1.009-1H9.17c.131-.373.335-.711.593-1zM10 13a2 2 0 0 1 2-2h5a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-5a2 2 0 0 1-2-2zm6.5 3h-4a.5.5 0 1 0 0 1h4a.5.5 0 1 0 0-1m-4-3a.5.5 0 1 0 0 1h4a.5.5 0 1 0 0-1z" />
-                                    {/* </g> */}
+                                   
                                 </svg>
                                 <span className='text-slate-400 text-sm' > You can send the instructions to your developer </span>
                             </div>

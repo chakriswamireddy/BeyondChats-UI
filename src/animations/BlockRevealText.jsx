@@ -28,7 +28,7 @@ export const BlockRevealText = ({ children, width = "fit-content", boxColor = "#
         }}
         initial="hidden"
         animate={mainControls}
-        transition={{ duration: duration || 0.5, delay: 0.25 }}
+        transition={{ duration: duration || 0.5, delay: 1 }}
         className="font-bold text-md sm:text-xl sm:mb-2  text-purple-400"
       >
         {children}
@@ -41,7 +41,7 @@ export const BlockRevealText = ({ children, width = "fit-content", boxColor = "#
         }}
         initial="hidden"
         animate={slideControls}
-        transition={{ duration: duration || 0.5, ease: "easeIn" }}
+        transition={{ duration: duration || 0.5, ease: "easeIn", delay:1 }}
         style={{
           position: "absolute",
           top: 4,
