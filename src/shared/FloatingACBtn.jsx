@@ -2,7 +2,6 @@ import React, { useEffect, useRef, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
-import { useRaf } from 'react-use';
 import ChatBar from './ChatBar';
 import Lottie from 'lottie-react';
 import botWaveLottie from '../assets/lottie/bot_wave_lottie.json'

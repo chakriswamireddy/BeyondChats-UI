@@ -10,10 +10,13 @@ import { motion } from "framer-motion";
 import regUserLottie from '../assets/lottie/register_wave.json'
 import Lottie from 'lottie-react';
 import DecryptedText from '../animations/DecryptedText/DecryptedText';
+import useSliderStore from '../zustand/sliderStore';
 
 
-function RegisterPage({ sliderRef }) {
+function RegisterPage() {
 	const containerRef = useRef(null);
+
+	const sliderRef = useSliderStore((state) => state.sliderRef)
 
 	const [isHoverOnBtn, setIsHoverOnBtn] = useState(false);
 	const [isPwdFocused, setIsPwdFocused] = useState(false);

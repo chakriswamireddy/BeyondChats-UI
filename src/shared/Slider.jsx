@@ -7,10 +7,15 @@ import React, { useRef } from 'react'
 import RegisterPage from "../components/RegisterPage";
 import OrgSetup from "../components/OrgSetup";
 import BotIntegrate from "../components/BotIntegrate";
+import { useStore } from "zustand";
+import useSliderStore from "../zustand/sliderStore";
 
 function Slider() {
 
-  const sliderRef = useRef(null);
+  // const sliderRef = useRef(null);
+  
+  const sliderRef = useSliderStore((state) => state.sliderRef)
+
 
   return (
     <Swiper
@@ -26,13 +31,13 @@ function Slider() {
     >
       <SwiperSlide key={"num"}>
 
-        <RegisterPage sliderRef={sliderRef} />
+        <RegisterPage   />
       </SwiperSlide>
       <SwiperSlide key={"num2"} className="rounded-2xl shadow-xl p-6">
-        <OrgSetup sliderRef={sliderRef} />
+        <OrgSetup />
       </SwiperSlide>
       <SwiperSlide key={"num3"}>
-        <BotIntegrate sliderRef={sliderRef} />
+        <BotIntegrate   />
       </SwiperSlide>
      
     </Swiper>
@@ -52,12 +57,12 @@ export default Slider;
 
 
 //   const scrollPrev = () => {
-//     // Use scrollPrev instead of slidePrev
+//   
 //     emblaRef.current.scrollPrev();
 //   };
 
 //   const scrollNext = () => {
-//     // Use scrollNext instead of slideNext
+//    
 //     emblaRef.current.scrollNext();
 //   };
 

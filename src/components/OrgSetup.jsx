@@ -2,13 +2,15 @@ import React, { useEffect, useState } from 'react'
 import { AnimatedList } from '../shared/AnimatedList'
 import { BlockRevealText } from '../animations/BlockRevealText'
 import TrainingCard from '../shared/TrainingCard'
-import isUrl from "is-url";
 import nextLottie from '../assets/lottie/Forward.json'
 import Lottie from 'lottie-react';
+import useSliderStore from '../zustand/sliderStore';
 
 
 
-function OrgSetup({ sliderRef }) {
+function OrgSetup() {
+
+    const sliderRef = useSliderStore((state) => state.sliderRef)
 
     const [isPopupOpen, setisPopupOpen] = useState(false);
 

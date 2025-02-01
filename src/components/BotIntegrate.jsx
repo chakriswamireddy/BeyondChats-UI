@@ -8,30 +8,32 @@ import { Link } from 'react-router'
 
 import mailSendLottie from '../assets/lottie/mail_send.json'
 import Lottie from 'lottie-react'
+import useSliderStore from '../zustand/sliderStore'
 
 
 
 
-export default function BotIntegrate({ sliderRef }) {
+export default function BotIntegrate() {
+
+    const sliderRef = useSliderStore((state) => state.sliderRef)
+
+    const [copied, setCopied] = useState(false);
+    
+    const [chosenInstrucs, setChosenInstrucs] = useState(null)
+    
+    const [isSendBtnHover, setIsSendBtnHover] = useState(false)
+    
+    const codeSnippet = `
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large">
+    <meta name="bingbot" content="index, follow">`
 
 
     const clsName = `relative text-[14px] sm:text-md px-4 sm:px-6 py-2 sm:py-3 rounded-xl  bg-slate-600 hover:bg-slate-100 text-white hover:text-slate-600
     font-medium hover:border hover:border-slate-600
     before:absolute before:bottom-[-5px] before:left-1/2 before:-translate-x-1/2 before:w-[100%] before:h-1 
     before:content-[''] before:blur-sm before:bg-[linear-gradient(90deg,red,orange,yellow,green,blue,indigo,violet)]`
-
-
-    const [copied, setCopied] = useState(false);
-
-    const [chosenInstrucs, setChosenInstrucs] = useState(null)
-
-    const [isSendBtnHover, setIsSendBtnHover] = useState(false)
-
-    const codeSnippet = `
-<meta name="robots" content="index, follow">
-<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large">
-<meta name="bingbot" content="index, follow">`
-
+    
     const copyToClipboard = async () => {
         try {
             await navigator.clipboard.writeText(codeSnippet);
@@ -163,7 +165,7 @@ export default function BotIntegrate({ sliderRef }) {
 
                 <div className='relative'>
                     <button className="relative  text-[14px] sm:text-md px-3  sm:px-6 py-2 sm:py-3 rounded-xl z-5 hover:bg-slate-600 bg-slate-100 border hover:text-white text-slate-600 font-medium"  > 
-                          <Link to='/client-website'>  Test Bot    </Link>  </button>
+                          <Link target='_blank' rel='noopener noreferrer' to='/client-website'>  Test Bot    </Link>  </button>
                 </div>
 
                 <div className='relative'>

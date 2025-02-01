@@ -2,8 +2,11 @@ import React, { useState } from 'react'
 import FloatingACBtn from '../shared/FloatingACBtn'
 
 import clientHomeImg from '../assets/images/client_home.jpg'
+import useSliderStore from '../zustand/sliderStore'
 
 function ClientWebsite() {
+
+  const sliderRef = useSliderStore((state) => state.sliderRef)
 
 
   return (
