@@ -132,10 +132,10 @@ function RegisterPage() {
 							</div>
 						</div>
 
-						<div className='flex justify-between'>
+						<div className='flex justify-between items-center'>
 
 
-							<p className="text-right ml-2 w-max text-[9px] sm:text-sm font-medium text-pink-500">{formError} </p>
+							<p className="text-right ml-2 w-max text-[12px] sm:text-sm font-medium text-pink-500">{formError} </p>
 
 
 							<button onClick={handleRegister}

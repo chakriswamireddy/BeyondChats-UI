@@ -96,7 +96,7 @@ function OrgSetup() {
                             </div>
 
 
-                            <p className="text-right  ml-auto text-[9px] sm:text-sm font-medium text-pink-500">{formError} </p>
+                            <p className="text-right  ml-auto text-[10px]  sm:text-sm font-medium text-pink-500">{formError} </p>
 
                             <div className='relative'>
                                 {/* <button 
@@ -109,12 +109,12 @@ function OrgSetup() {
                                             setIsHoverOnBtn(false)
                                         }, 1000)
                                     }} onMouseLeave={() => setIsHoverOnBtn(false)}
-                                    type="button" className="cursor-pointer ml-auto block  w-s px-8 pr-12 py-3 font-semibold rounded-md bg-violet-400 dark:bg-violet-600 text-gray-900 dark:text-gray-50">
+                                    type="button" className="cursor-pointer ml-auto block  px-4 sm:px-8 pr-8 sm:pr-12 py-3 text-sm sm:text-base font-semibold rounded-md bg-violet-600 text-gray-50">
                                         Set Up
 
 
                                 </button>
-                                <Lottie animationData={nextLottie} className='h-10 w-10 bottom-1 right-2 absolute  ' loop={isHoverOnBtn} autoplay={isHoverOnBtn} />
+                                <Lottie animationData={nextLottie} className=' h-8 w-8 sm:h-10 sm:w-10 bottom-1 right-1 sm:right-2 absolute  ' loop={isHoverOnBtn} autoplay={isHoverOnBtn} />
                             </div>
                         </div>
                         <div className='relative'>
