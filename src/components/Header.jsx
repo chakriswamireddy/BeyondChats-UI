@@ -10,7 +10,7 @@ function Header() {
 
 
             <div className='h-16  ml-4 sm:ml-8 mb-2'>
-            <TypingAnim  children={" Hi, From BeyondChats bot "} />
+            <TypingAnim  children={" Hi, From BeyondChats Bot "} />
 
             </div>
 

@@ -84,7 +84,7 @@ const AnimatedList = memo(({ items, className = "", delay = 1000 }) => {
   }, [currentIndex, items, delay]);
 
   return (
-    <div className={`flex flex-col  items-center gap-4  max-h-96 w-64  sm:w-sm overflow-y-auto py-4 sm:px-8  ${className}`}>
+    <div className={`flex flex-col  items-center gap-4  max-h-96 w-full  sm:w-sm overflow-y-auto py-4 sm:px-8  ${className}`}>
       <AnimatePresence>
         {displayedItems.map((item, i) => (
           <AnimatedListItem key={item} index={i}>{item}</AnimatedListItem>
